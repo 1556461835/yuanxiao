@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="yuanxiao.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide box">
+					<img src="img/mid-bg.webp" class="tu1">
+					<img src="img/sm-bg.webp" class="tu2">
+					<img src="img/border-1.webp" class="tu3">
+					<img src="img/DL1.webp" class="tu4">
+					<img src="img/DL1.webp" class="tu5">
+					<img src="img/jiantou.png" class="tu6">
+					<img src="img/Pic-yuanxiao.webp" class="tu7">
+					<img src="img/text-Nao.webp" class="tu8">
+					<img src="img/text-Yuan.webp" class="tu9">
+					<img src="img/text-Xiao.webp" class="tu10">
+				</div>
+			<div class="swiper-slide box">
+				<img src="img/mid-bg.webp" class="tu1">
+				<img src="img/sm-bg.webp" class="tu2">
+				<img src="img/border-1.webp" class="tu3">
+				<img src="img/DL1.webp" class="tu4">
+				<img src="img/DL1.webp" class="tu5">
+				<img src="img/jiantou.png" class="tu6">
+				<img src="img/Pic-yuanxiao.webp" class="tu7">
+				<img src="img/text-Nao.webp" class="tu8">
+				<img src="img/text-Yuan.webp" class="tu9">
+				<img src="img/text-Xiao.webp" class="tu10">
+			</div>
+			<div class="swiper-slide box">
+				<img src="img/mid-bg.webp" class="tu1">
+				<img src="img/sm-bg.webp" class="tu2">
+				<img src="img/border-1.webp" class="tu3">
+				<img src="img/DL1.webp" class="tu4">
+				<img src="img/DL1.webp" class="tu5">
+				<img src="img/jiantou.png" class="tu6">
+				<img src="img/Pic-yuanxiao.webp" class="tu7">
+				<img src="img/text-Nao.webp" class="tu8">
+				<img src="img/text-Yuan.webp" class="tu9">
+				<img src="img/text-Xiao.webp" class="tu10">
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+		</div>
+		<script src="swiper.min.js"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical', // 垂直切换选项
+				loop: false, // 循环模式选项
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			})
+		</script>
+	</body>
+
+</html>
