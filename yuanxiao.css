@@ -5,6 +5,55 @@
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(30deg); } }
+@-webkit-keyframes yinyue {
+  from {
+    -webkit-transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes shang {
+  to {
+    -webkit-transform: translateY(-10px);
+    opacity: 0; } }
+@-webkit-keyframes tu1 {
+  to {
+    -webkit-transform: rotate(180deg); } }
+@-webkit-keyframes tu2 {
+  to {
+    -webkit-transform: rotate(-180deg); } }
+@-webkit-keyframes tu3 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3); }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+@-webkit-keyframes zi {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3); }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+.swiper-container {
+  position: relative; }
+  .swiper-container .yueyin {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 99999;
+    -webkit-animation: yinyue 1s linear infinite; }
+  .swiper-container .tu6 {
+    position: absolute;
+    bottom: 10px;
+    right: 117px;
+    height: 15px;
+    width: 15px;
+    z-index: 99999;
+    -webkit-animation: shang 1s linear infinite; }
+
 .box {
   background: url("https://p-cdn2.rabbitpre.com/a344f317-a976-4a2c-ab73-9389cb4994a9?imageMogr2/auto-orient|imageMogr2/cut/640x1008x0x0/format/webp");
   width: 250px;
@@ -13,6 +62,8 @@
   .box .tu1 {
     width: 250px;
     height: 400px; }
+    .box .tu1.active {
+      -webkit-animation: tu1 1s linear 1; }
   .box .tu2 {
     position: absolute;
     top: 0;
@@ -20,6 +71,8 @@
     margin: 32px 15px 33px 13px;
     width: 230px;
     height: 350px; }
+    .box .tu2.active {
+      -webkit-animation: tu2 1s linear 1; }
   .box .tu3 {
     position: absolute;
     top: 0;
@@ -28,7 +81,20 @@
     bottom: 0;
     margin: auto auto;
     width: 200px;
-    height: 320px; }
+    height: 320px;
+    -webkit-animation: tu3 1s linear 1s 1 forwards; }
+  .box .caption {
+    font-size: 10px;
+    height: 12px;
+    width: 150px;
+    color: #ffc786;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 1;
+    -webkit-animation: zi 3s linear 1; }
   .box .tu4 {
     position: absolute;
     top: 0;
@@ -41,12 +107,6 @@
     right: 0;
     height: 100px;
     width: 50px; }
-  .box .tu6 {
-    position: absolute;
-    bottom: 10px;
-    right: 117px;
-    height: 15px;
-    width: 15px; }
   .box .tu7 {
     position: absolute;
     bottom: 20px;
@@ -57,21 +117,22 @@
     -webkit-animation: rotate 1s ease-in-out alternate infinite; }
   .box .tu8 {
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 0px;
     height: 80px;
     width: 80px; }
   .box .tu9 {
     position: absolute;
-    top: 130px;
+    top: 140px;
     right: 0px;
     height: 80px;
     width: 80px; }
   .box .tu10 {
     position: absolute;
-    top: 210px;
+    top: 220px;
     right: 0px;
-    height: 80px;
-    width: 80px; }
+    height: 80px !important;
+    width: 80px;
+    height: 10px; }
 
 /*# sourceMappingURL=yuanxiao.css.map */

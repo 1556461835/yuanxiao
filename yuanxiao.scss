@@ -9,6 +9,73 @@ $width: 250px;
 		-webkit-transform: rotate(30deg);
 	}
 }
+@-webkit-keyframes yinyue{
+	from{
+		-webkit-transform: rotate(0);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes shang{
+	to{
+		-webkit-transform: translateY(-10px);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes tu1{
+	to{
+		-webkit-transform: rotate(180deg);
+	}
+}
+@-webkit-keyframes tu2{
+	to{
+		-webkit-transform: rotate(-180deg);
+	}
+}
+@-webkit-keyframes tu3{
+	from{
+		opacity: 0;
+		-webkit-transform: scale(0.3);
+	}
+	to{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes zi{
+	from{
+		opacity: 0;
+		-webkit-transform: scale(0.3);
+	}
+	to{
+			-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+.swiper-container{
+	position: relative;
+	.yueyin{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border-radius: 50%;
+		z-index: 99999;
+		-webkit-animation: yinyue 1s linear infinite;
+	}
+	.tu6{
+		position: absolute;
+		bottom: 10px;
+		right: 117px;
+		height: 15px;
+		width:15px;
+		z-index: 99999;
+		-webkit-animation: shang 1s linear infinite;
+	}
+}
+	
 .box{
 	background: url("https://p-cdn2.rabbitpre.com/a344f317-a976-4a2c-ab73-9389cb4994a9?imageMogr2/auto-orient|imageMogr2/cut/640x1008x0x0/format/webp");
 	width: $width;
@@ -17,6 +84,9 @@ $width: 250px;
 	.tu1{
 		width: 250px;
 		height: 400px;
+		&.active{
+				-webkit-animation: tu1 1s linear 1;
+			}	
 	}
 	.tu2{
 		position: absolute;
@@ -25,6 +95,9 @@ $width: 250px;
 		margin: 32px 15px 33px 13px;
 		width: 230px;
 		height: 350px;
+		&.active{
+			-webkit-animation: tu2 1s linear 1;
+		}
 	}
 	.tu3{
 		position: absolute;
@@ -35,6 +108,20 @@ $width: 250px;
 		margin: auto auto;
 		width: 200px;
 		height: 320px;
+		-webkit-animation: tu3 1s linear 1s 1 forwards;
+	}
+	.caption{
+		font-size: 10px;
+		height: 12px;
+		width: 150px;
+		color: rgb(255,199,134);
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		opacity: 1;
+		-webkit-animation: zi 3s linear 1;
 	}
 	.tu4{
 		position: absolute;
@@ -50,13 +137,6 @@ $width: 250px;
 		height: 100px;
 		width:50px;
 	}
-	.tu6{
-		position: absolute;
-		bottom: 10px;
-		right: 117px;
-		height: 15px;
-		width:15px;
-	}
 	.tu7{
 		position: absolute;
 		bottom: 20px;
@@ -68,23 +148,24 @@ $width: 250px;
 	}
 	.tu8{
 		position: absolute;
-		top: 50px;
+		top: 60px;
 		right: 0px;
 		height: 80px;
 		width:80px;
 	}
 	.tu9{
 		position: absolute;
-		top: 130px;
+		top: 140px;
 		right: 0px;
 		height: 80px;
 		width:80px;
 	}
 	.tu10{
 		position: absolute;
-		top: 210px;
+		top: 220px;
 		right: 0px;
-		height: 80px;
+		height: 80px !important;
 		width:80px;
+		height: 10px;
 	}
 }
